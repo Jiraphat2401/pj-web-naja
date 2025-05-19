@@ -12,7 +12,7 @@
  * Subpage
 -------------------------------------------------*/
 /*-----------------------------------------------
- * Reset, root
+root
 -------------------------------------------------*/
 
 
@@ -94,6 +94,7 @@ body {
   letter-spacing: 0.05em;
   line-height: 1.8;
   word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 .sp{ display: none; }
@@ -388,11 +389,12 @@ body {
 
 .slider-container {
   display: flex;
-  overflow-x: auto;
+  overflow-x: visible;
   scroll-snap-type: x mandatory;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0;
   justify-content: center;
+  position: relative;
 }
 .slider-container::-webkit-scrollbar {
   display: none; /* ซ่อน scrollbar */
@@ -406,12 +408,15 @@ body {
   background: #fff;
   padding: 0px;
   border: none;
+  max-width: 100%;
   
 }
-.slide iframe, .movie__thumbnail {
+.movie__thumbnail {
   width: 100%;
-  height: 530px;
+  height: auto;	
   border: none;
+  object-fit: contain;
+  z-index: 0;
 }
 .slide p {
   font-weight: bold;
