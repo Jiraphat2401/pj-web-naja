@@ -1,39 +1,19 @@
-
-
-
-.menu-button {
-  position: fixed;
-  top: 0px;       /* ระยะห่างจากบน */
-  right: 0px;      /* ระยะห่างจากซ้าย */
-  width: 80px;    /* หรือแล้วแต่ขนาดที่คุณต้องการ */
-  height: 50px;
-  background: linear-gradient(0deg, rgba(var(--color-blue),0.815) 0%, rgba(var(--color-green),1) 100%);
-  color: white;
-  z-index: 99;   /* ให้ซ้อนอยู่บนสุด */
-  text-align: left;
-  padding-top: 45px;
-  padding-right: 0;
-}
-
-.menu-line {
-	height: 4px;
-	background: white;
-	margin-bottom: 8px;
-	margin-right: 0;
-	padding-right: 0;
-}
-
-.h-logo {
-  position: fixed;
-  top: 0px;       /* ระยะห่างจากบน */
-  left: 0px;      /* ระยะห่างจากซ้าย */
-  width: 170px;    /* หรือแล้วแต่ขนาดที่คุณต้องการ */
-  height: 70px;
-  background-image: url(/assets/images/common/nav/h_logo.png);
-  background-repeat: no-repeat;
-  color: white;
-  z-index: 99;   /* ให้ซ้อนอยู่บนสุด */
-}
+/*-----------------------------------------------
+ * top.css
+ * @media screen and (max-width:767px)
+ * @media screen and (max-width:460px)
+ * @media screen and (max-width:320px)
+ * @media screen and (max-width:650px) and (min-width:461px)
+-------------------------------------------------*/
+/*-----------------------------------------------
+ * news
+ * intro
+ * movie
+ * NavBottom__Menu
+-------------------------------------------------*/
+/*-----------------------------------------------
+news
+-------------------------------------------------*/
 
 .news {
 	width: var(--common-in-width);
@@ -41,11 +21,6 @@
 	margin: 0 auto;
 	padding-top: min(11.66666vw,140px);
 }
-/* @media screen and (max-width:767px){
-	.news {
-		padding-top: 20vw;
-	}
-}* /
 
 /* inner */
 .news__inner {
@@ -60,6 +35,12 @@
 /**
  * newsLists
  */
+
+.newsLists {
+	padding-left: 0;
+	margin: 0;
+}
+
 .newsListsWrap {
 	display: flex;
 	flex-direction: column;
@@ -68,7 +49,6 @@
 }
 @media screen and (max-width:767px){
 	.newsListsWrap {
-		margin-top: 5.33333vw;
 		padding-left: 0;
 	}
 }
@@ -181,6 +161,11 @@
 }
 
 
+/*-----------------------------------------------
+intro
+-------------------------------------------------*/
+
+
 .intro {
 	position: relative;
 }
@@ -219,10 +204,40 @@
 }
 @media screen and (max-width:767px){
 	.introTextWrap {
-		margin-top: 6.66666vw;
+		margin-top: 1.66666vw;
 	}
 	.introText {
 		font-size: 1.5vw;
+		padding: 0vw;
+	}
+}
+
+@media screen and (max-width:650px) and (min-width:461px) {
+	.introTextWrap {
+		margin-top: 1.66666vw;
+	}
+	.introText {
+		font-size: 1.75vw;
+		padding: 0vw;
+	}
+}
+
+@media screen and (max-width:460px) {
+	.introTextWrap {
+		margin-top: 1.66666vw;
+	}
+	.introText {
+		font-size: 2.5vw;
+		padding: 0vw;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.introTextWrap {
+		margin-top: 1.66666vw;
+	}
+	.introText {
+		font-size: 3.5vw;
 		padding: 0vw;
 	}
 }
@@ -304,8 +319,13 @@ position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(4, 39, 27, 0.815);
+  background-color: #103123; /* สีพื้นหลัง */
+  background-image: radial-gradient(#008080 1px, transparent 1px);
+  background-size: 4px 4px;
   z-index: 1;
+  pointer-events: none;
+  opacity: 0.75;
+  overflow: hidden;
 }
 
 
@@ -321,7 +341,29 @@ position: absolute;
 @media screen and (max-width:767px) {
 	.intro__play-container {
 		bottom: 3%;
-		right: 37.5%;
+		right: 0.5%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.intro__play-container {
+		bottom: 3%;
+		right: 34.5%;
+	}
+}
+
+@media screen and (max-width:460px) {
+	.intro__play-container {
+		scale: 0.6;
+		bottom: 1%;
+		right: 31.25%;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.intro__play-container {
+		position: absolute;
+		right: 25%;
 	}
 }
 
@@ -354,6 +396,11 @@ position: absolute;
   cursor: pointer;
 }
 
+/*-----------------------------------------------
+movie
+-------------------------------------------------*/
+
+
 .movieLists {
 	position: relative;
 	list-style-type: none;
@@ -363,6 +410,26 @@ position: absolute;
 .movieLists__Title {
 	display: flex;
 	justify-content: center;
+	font-size: 16px;
+	text-align: center;
+}
+
+@media screen and (max-width:767px) {
+	.movieLists__Title {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width:460px) {
+	.movieLists__Title {
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width:320px){
+	.movieLists__Title {
+		font-size: 8px;
+	}
 }
 
 .movie__play-container {
@@ -371,7 +438,11 @@ position: absolute;
   left: 46.5%;
   z-index: 10;
   transition: transform .4s ease;
-  
+  width: min(136px);
+}
+
+.movie__play-container img{
+	width: 100%;
 }
 
 .movie__play-container:hover {
@@ -380,11 +451,30 @@ position: absolute;
 
 @media screen and (max-width:767px) {
 	.movie__play-container {
+		position: absolute;
 		bottom: 30%;
-		left: 40%;
+		left: 42%;
+		scale: 0.5;
 	}
 }
 
+@media screen and (max-width:460px) {
+	.movie__play-container {
+		position: absolute;
+		bottom: 21.5%;
+		left: 35.0%;
+		scale: 0.35;
+	}
+}
+
+@media screen and (max-width:320px){
+	.movie__play-container {
+		position: absolute;
+		bottom: 8%;
+		left: 30.33%;
+		scale: 0.15;
+	}
+}
 
 .movie__play {
 	position: relative;
@@ -395,6 +485,7 @@ position: absolute;
 	animation: rotate 18s linear infinite;
 	background: white;
 	mask-image: url(/assets/images/common/icon/icon_play_bg.png);
+	mask-repeat: no-repeat;
 }
 
 .movie__playbutton {
@@ -406,6 +497,7 @@ position: absolute;
   cursor: pointer;
   background: white;
   mask-image: url(/assets/images/common/icon/icon_play.svg);
+  mask-repeat: no-repeat;
 }
 
 .img-overlay {
@@ -428,42 +520,60 @@ position: absolute;
 	}
 }
 
-/* @media screen and (max-width:767px){
-	.introTextWrap {
-		margin-top: 6.66666vw;
-	}
-	.introText {
-		font-size: 1.5vw;
-		padding: 0vw;
-	}
-} */
-
-/* #img-overlay-sub_1 {
-  position: absolute;
-  top: 0;
-  left: 50;
-  width: 49.5%;
-  height: 531px;
-  background: linear-gradient(0deg, rgba(var(--color-blue),0.815) 0%, rgba(var(--color-green),0.115) 100%);
-  z-index: 1;
-  margin-top: 15.5px;
+.movieListsWarp {
+	position: relative;
+	overflow: hidden;
 }
 
-#img-overlay-sub_2 {
-  position: absolute;
-  top: 0;
-  left: 50;
-  width: 24.5%;
-  height: 531px;
-  background: linear-gradient(0deg, rgba(var(--color-blue),0.815) 0%, rgba(var(--color-green),0.115) 100%);
-  z-index: 1;
-  margin-top: 15.5px;
-} */
+.movieListsWarp::before,
+.movieListsWarp::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 10vh;
+	height: 100%;
+	z-index: 50;
+	pointer-events: none;
+}
+
+@media screen and (max-width:767px) {
+	.movieListsWarp::after,.movieListsWarp::before {
+		width: 8vh;
+	}
+}
+
+@media screen and (max-width:460px) {
+	.movieListsWarp::after,.movieListsWarp::before {
+		width: 6vh;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.movieListsWarp::after,.movieListsWarp::before {
+		width: 4vh;
+	}
+}
+
+.movieListsWarp::before {
+	left: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent);
+	backdrop-filter: blur(1px);
+}
+
+.movieListsWarp::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
+  backdrop-filter: blur(1px);
+}
 
 
+/*-----------------------------------------------
+NavBottom_Menu
+-------------------------------------------------*/
 
 .NavBottom__Menu {
 	padding-top: min(1.66666vw,200px);
+	overflow: hidden;
 }
 
 .NavBottomLists {
@@ -551,14 +661,39 @@ position: absolute;
 
 .NavBottomLists__more__text {
 	color: rgb(var(--color-blue));
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
     bottom: 26%;
     left: 0;
+	letter-spacing: 2px;
 }
+
+@media screen and (max-width:767px) {
+	.NavBottomLists__more__text {
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+}
+
+@media screen and (max-width:460px) {
+	.NavBottomLists__more__text {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.NavBottomLists__more__text {
+		font-size: 8px;
+		letter-spacing: 1px;
+	}
+}
+
+
+
 
 .NavBottomLists__more__inner::after {
 	content: "";
@@ -566,6 +701,13 @@ position: absolute;
 	display: block;
 	width: 100%;
 	height: 1px;
+	margin-top: 1vh;
+}
+
+@media screen and (max-width:767px) {
+	.NavBottomLists__more__inner::after {
+		margin-top: 1vh;
+	}
 }
 
 .NavBottomLists__more__inner {
@@ -583,106 +725,4 @@ position: absolute;
 
 .NavBottomLists__item > a:hover .NavBottomLists__more__inner {
 	width: 80%;
-}
-
-@media screen and (max-width:767px) {
-	.NavBottomLists__more__inner::after {
-		margin-top: 17px;
-	}
-}
-
-.footer {
-	padding-top: 200px;
-	padding-bottom: 700px;
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	background-image: url(/assets/images/common/footer/footer_visual.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-}
-
-
-.footer * {
-	position: relative;
-	z-index: 2;
-}
-
-.footerBnrLists {
-	display: flex;
-	list-style: none;
-	justify-content: center;
-	gap: 2vh;
-	flex-wrap: wrap;
-}
-
-
-.footer__shareDl {
-	margin-top: 40;
-
-}
-
-.footer__shareDl--dt {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-
-}
-
-.footer__shareDl--dd {
-	margin: 0;
-	padding-top: 10px;
-}
-
-
-.footer__shareLists {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.footer__shareLists  #tw{
-	width: 4vw;
-	height: 3vh;
-	filter: brightness(0) saturate(100%) invert(66%) sepia(19%) saturate(973%) hue-rotate(134deg) brightness(97%) contrast(91%);
-
-}
-
-.footer__shareLists  #fb{
-	width: 4vw;
-	height: 3vh;
-	filter: brightness(0) saturate(100%) invert(66%) sepia(19%) saturate(973%) hue-rotate(134deg) brightness(97%) contrast(91%);
-}
-
-.footer__shareLists  #line{
-	width: 4vw;
-	height: 3vh;
-    filter: brightness(0) saturate(100%) invert(66%) sepia(19%) saturate(973%) hue-rotate(134deg) brightness(97%) contrast(91%);
-}
-
-.footer__copyright {
-	margin-top: 80px;
-	position: relative;
-	left: 38.5%;
-
-}
-
-.footer__copyright > a {
-	margin-left: 125px;
-}
-
-.share{
-  color: var(--color-blue); /* สีปกติของลิงก์ */
-  text-decoration: underline;
-}
-
-/* ป้องกัน visited เปลี่ยนสี */
-.share:visited {
-  color: (var(--color-blue)); /* ใช้สีเดียวกับปกติ */
 }

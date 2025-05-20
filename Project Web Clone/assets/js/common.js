@@ -24,7 +24,3 @@ function changeImage(src) {
     };
   }, 500); // ตรงกับระยะเวลาการ fade-out
 }
-
-function startVideo(src) {
-	document.getElementById("intro__play-container").src = src;
-}

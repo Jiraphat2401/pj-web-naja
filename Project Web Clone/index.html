@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>アニメ「葬送のフリーレン』公式サイト</title>
+      <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/common.css">
       <link rel="stylesheet" href="assets/css/top.css">
-      <script src="assets/js/top.js"></script>
       <script src="/assets/js/common.js"></script>
       <script src="/assets/js/ytplayer.js"></script>
 </head>
 
 <body>
+<header>
     <!-- ========== NAV ========== -->    
-<div class="menu-button">
-  <div class="menu-icon">
-    <!-- ใส่ icon เป็นรูปหรือเส้นก็ได้ -->
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-  </div>
-  <div class="menu-label">MENU</div>
-</div>
+    <div class="menu-button">
+        <div class="menu-icon">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        <div class="menu-label">MENU</div>
+    </div>
 
-<div class="h-logo">
-    <div id="logo-color" class="h-logo-icon"></div>
-</div>
+    <div class="h-logo">
+        <img src="/assets/images/common/nav/h_logo.png" alt="h-logo">
+    </div>
+</header>
     <!-- ========== NAV-END ========== -->    
 
     <!-- ========== VisualLists ========== --> 
-    <div class="visualArea"> 
+<div class="visualArea"> 
     <img id="main_key_visual" class="fullscreen" src="assets/images/top/top/8_visual.jpg" alt="Season_2_key_visual_2">
-
- <div class="thumbnail-container"> <!-- ==========  Visual Change Btn ========== --> 
-    <img class="thumbnail" src="assets/images/top/top/8_visual_thumb.jpg" onclick="changeImage('assets/images/top/top/8_visual.jpg')">
-    <img class="thumbnail" src="assets/images/top/top/7_visual_thumb.jpg" onclick="changeImage('assets/images/top/top/7_visual.jpg')">
- </div><!-- ==========  Visual Change Btn-END ========== --> 
+    <div class="thumbnail-container"> <!-- ==========  Visual Change Btn ========== --> 
+        <img class="thumbnail" src="assets/images/top/top/8_visual_thumb.jpg" alt="2_visual_thumb" onclick="changeImage('assets/images/top/top/8_visual.jpg')">
+        <img class="thumbnail" src="assets/images/top/top/7_visual_thumb.jpg" alt="1_visual_thumb" onclick="changeImage('assets/images/top/top/7_visual.jpg')">
+    </div><!-- ==========  Visual Change Btn-END ========== --> 
 </div><!-- ========== VisualLists-END ========== --> 
 
 <!-- ========== news ========== --> 
@@ -77,11 +80,12 @@
                 </div><!-- /.newsListsWrap -->
             </div><!-- /.news__inner -->
     </section><!-- ========== news-END ========== --> 
+
 <!-- ========== intro ========== --> 
     <section id="intro" class="intro">
         <div class="intro__play-container" >
-            <img class="intro__play" src="./assets/images/common/icon/icon_play_bg.png">
-            <img class="intro__playbutton" src="assets/images/common/icon/icon_play.svg">
+            <img class="intro__play" src="./assets/images/common/icon/icon_play_bg.png" alt="">
+            <img class="intro__playbutton" src="assets/images/common/icon/icon_play.svg" alt="">
         </div>
             <div class="video-wrapper">
                 <div class="video-mask-top"></div>
@@ -143,9 +147,9 @@
                             <br>
                             フリーレンの「人の心を知る旅」が、再び始まる―。
                         </p>
-                    </div>
-                </div>      
-            </div>
+                    </div> <!-- ========== introTextWrap-END ========== -->
+                </div>   <!-- ========== intro__contWrap-END ========== -->   
+            </div> <!-- ========== video-wrapper-END ========== -->
     </section> 
     <!-- ========== intro-END ========== -->
     
@@ -155,40 +159,38 @@
             <span class="contTitle2__en font-cinzel">MOVIE</span>
             <span class="contTitle2__ja">映像</span>
         </h2>
-        <div class="movieListWarp">
+        <div class="movieListsWarp"> <!--=== side blur is here ===-->
             <ul class="movieLists">
                 <li class="movieLists__item">
                     <div class="slider-container">
                         <div class="img-overlay"></div>
                         <div class="slide">
-                            <img class="movie__thumbnail" src="https://img.youtube.com/vi/4jC3owE69iM/maxresdefault.jpg" alt="Video thumbnail">
+                            <img class="movie__thumbnail" src="https://img.youtube.com/vi/4jC3owE69iM/maxresdefault.jpg" alt="Video thumbnail 旅の記憶スペシャルビデオ">
                             <p class="movieLists__Title ">旅の記憶"スペシャルビデオ</p>
                             <div id="img-overlay-sub_1" class="img-overlay-sub"></div>
                         </div>
                         <div class="slide">
-                            <img class="movie__thumbnail" src="https://img.youtube.com/vi/SFc_XqPHC24/maxresdefault.jpg" alt="Video thumbnail">
+                            <img class="movie__thumbnail" src="https://img.youtube.com/vi/SFc_XqPHC24/maxresdefault.jpg" alt="Video thumbnail 「また会ったときに恥ずかしいからね」予告">
                             <p class="movieLists__Title">「また会ったときに恥ずかしいからね」予告</p>
                             <div class="movie__play-container" >
                                 <img class="movie__play">
                                 <img class="movie__playbutton">
                             </div>
                         </div>
-                            <div class="slide">
-                            <img class="movie__thumbnail" src="https://img.youtube.com/vi/Y1DpzDFQ96w/maxresdefault.jpg" alt="Video thumbnail">
+                        <div class="slide">
+                            <img class="movie__thumbnail" src="https://img.youtube.com/vi/Y1DpzDFQ96w/maxresdefault.jpg" alt="Video thumbnail 「人間の時代」予告">
                             <div id="img-overlay-sub_2" class="img-overlay-sub"></div>
                             <p class="movieLists__Title">「人間の時代」予告</p>
                         </div>
-                        <!-- <div class="movie__play-container" >
-                                <img class="movie__play">
-                                <img class="movie__playbutton">
-                        </div> -->
-                    </div>
-                </li>
-            </ul>    
-        </div>
+
+                    </div> <!-- ========== slider-container-END ========== --> 
+                </li> <!-- ========== movieLists__item ========== --> 
+            </ul> <!-- ========== movieLists ========== --> 
+        </div> <!-- ========== movieListsWarp-END ========== --> 
     </section>
 <!-- ========== movie-END ========== --> 
-<!-- ========== NavBottom ========== --> 
+
+<!-- ========== NavBottom__Menu ========== --> 
     <section id="NavBottom__Menu" class="NavBottom__Menu">
         <nav class="NavBottom">
             <ul class="NavBottomLists">
@@ -300,10 +302,10 @@
                     </div>
                     </a>
                 </li>
-            </ul>
-        </nav>
+            </ul><!-- ========== NavBottomLists ========== --> 
+        </nav><!-- ========== NavBottom-END ========== --> 
     </section>
-<!-- ========== NavBottom-END ========== --> 
+<!-- ========== NavBottom__Menu-END ========== --> 
 
 <!-- ========== footer- ========== --> 
     <footer id="footer" class="footer">
@@ -312,22 +314,22 @@
                 <ul class="footerBnrLists">
                     <li class="footerBnrLists__item">
                         <a href="index.html" target="_blank">
-                            <img src="/assets/images/common/footer/bnr/bnr03.png">
+                            <img src="/assets/images/common/footer/bnr/bnr03.png" alt="websunday">
                         </a>
                     </li>
                     <li class="footerBnrLists__item">
                         <a href="index.html" target="_blank">
-                            <img src="/assets/images/common/footer/bnr/bnr06.jpg">
+                            <img src="/assets/images/common/footer/bnr/bnr06.jpg" alt="sunday-webry_frieren">
                         </a>
                     </li>
                     <li class="footerBnrLists__item">
                         <a href="index.html" target="_blank">
-                            <img src="/assets/images/common/footer/bnr/bnr05.jpg">
+                            <img src="/assets/images/common/footer/bnr/bnr05.jpg" alt="x_FRIEREN_PR">
                         </a>
                     </li>
                     <li class="footerBnrLists__item">
                         <a href="index.html" target="_blank">
-                            <img src="/assets/images/common/footer/bnr/bnr02.jpg">
+                            <img src="/assets/images/common/footer/bnr/bnr02.jpg" alt="madhouse">
                         </a>
                     </li>
                 </ul>
@@ -339,28 +341,34 @@
                     <ul class="footer__shareLists">
                         <li class="footer__shareLists__item">
                             <a href="index.html">
-                                <img id="tw" src="/assets/images/common/icon/icon_tw.svg" alt="">
+                                <img id="tw" src="/assets/images/common/icon/icon_tw.svg" alt="icon_tw">
                             </a>
                         </li>
                         <li class="footer__shareLists__item">
                             <a href="index.html">
-                                <img id="fb" src="/assets/images/common/icon/icon_fb.svg" alt="">
+                                <img id="fb" src="/assets/images/common/icon/icon_fb.svg" alt="icon_fb">
                             </a>
                         </li>
                         <li class="footer__shareLists__item">
                             <a href="index.html">
-                                <img id="line" src="/assets/images/common/icon/icon_line.svg" alt="">
+                                <img id="line" src="/assets/images/common/icon/icon_line.svg" alt="icon_line">
                             </a>
                         </li>
                     </ul>
                 </dd>
             </dl>
-            <small class="footer__copyright">
+            <p class="footer__copyright">
                 © 山田鐘人・アベツカサ／小学館／「葬送のフリーレン」製作委員会
                 <br>
                 <a class="share" href="index.html" target="_blank">クッキーポリシーについて</a>
-            </small>
-        </div>
+            </p>
+            <p class="pagetop">
+                <a href="index.html">
+                <img src="/assets/images/common/icon/icon_arrow_top.svg" alt="icon_arrow_top">
+                <span class="pagetop__text font-cinzel">PAGE TOP</span>
+                </a>
+            </p>
+        </div> <!-- ========== footer__inner-END ========== --> 
     </footer>
 <!-- ========== footer-END ========== --> 
 </body>
