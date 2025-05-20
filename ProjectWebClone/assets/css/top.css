@@ -278,12 +278,12 @@ position: absolute;
   background: white;
   /*/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/common/icon/icon_play_bg.png   server part for mask image example*/
   /* /assets/images/top/intro/mask_top.png */
-  -webkit-mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/top/intro/mask_top.png');
+  -webkit-mask-image: url('/assets/images/top/intro/mask_top.png');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   -webkit-mask-position: center;
 
-  mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/top/intro/mask_top.png');
+  mask-image: url('/assets/images/top/intro/mask_top.png');
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center;
@@ -299,12 +299,12 @@ position: absolute;
   height: 70px;
   background: white;
 
-  -webkit-mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/top/intro/mask_bottom.png');
+  -webkit-mask-image: url('/assets/images/top/intro/mask_bottom.png');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   -webkit-mask-position: center;
 
-  mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/top/intro/mask_bottom.png');
+  mask-image: url('/assets/images/top/intro/mask_bottom.png');
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center;
@@ -485,8 +485,8 @@ movie
 	cursor: pointer;
 	animation: rotate 18s linear infinite;
 	background: white;
-	mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/common/icon/icon_play_bg.png');
-	-webkit-mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/common/icon/icon_play_bg.png');
+	mask-image: url('/assets/images/common/icon/icon_play_bg.png');
+	-webkit-mask-image: url('/assets/images/common/icon/icon_play_bg.png');
 	mask-repeat: no-repeat;
 	-webkit-mask-repeat: no-repeat;
 }
@@ -499,8 +499,8 @@ movie
   height: 35px;
   cursor: pointer;
   background: white;
-  mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/common/icon/icon_play.svg');
-  -webkit-mask-image: url('/home/int150250101/html/int150/pj-web-naja/ProjectWebClone/assets/images/common/icon/icon_play.svg');
+  mask-image: url('/assets/images/common/icon/icon_play.svg');
+  -webkit-mask-image: url('/assets/images/common/icon/icon_play.svg');
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
