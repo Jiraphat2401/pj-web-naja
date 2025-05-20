@@ -485,7 +485,9 @@ movie
 	animation: rotate 18s linear infinite;
 	background: white;
 	mask-image: url(assets/images/common/icon/icon_play_bg.png);
+	-webkit-mask-image: url(assets/images/common/icon/icon_play_bg.png);
 	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
 }
 
 .movie__playbutton {
@@ -497,7 +499,9 @@ movie
   cursor: pointer;
   background: white;
   mask-image: url(assets/images/common/icon/icon_play.svg);
+  -webkit-mask-image: url(assets/images/common/icon/icon_play.png);
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .img-overlay {
